@@ -3,7 +3,6 @@ module github.com/metacubex/mihomo
 go 1.20
 
 require (
-	dario.cat/mergo v1.0.1
 	github.com/3andne/restls-client-go v0.1.6
 	github.com/bahlo/generic-list-go v0.2.0
 	github.com/coreos/go-iptables v0.7.0
@@ -118,3 +117,5 @@ require (
 )
 
 replace github.com/sagernet/sing => github.com/metacubex/sing v0.0.0-20240724044459-6f3cf5896297
+
+replace gopkg.in/yaml.v3 => github.com/Benyamin-Tehrani/yaml v0.0.0-20241006120305-e828807d2bb4
