@@ -117,3 +117,5 @@ require (
 )
 
 replace github.com/sagernet/sing => github.com/metacubex/sing v0.0.0-20241021005542-18b67490300a
+
+replace github.com/metacubex/sing-tun => github.com/Benyamin-Tehrani/sing-tun v0.4.0-rc.4.0.20241102015417-e89368ba811f
