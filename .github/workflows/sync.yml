@@ -1,0 +1,17 @@
+name: Sync with Upstream
+on:
+  schedule:
+  - cron: "0 4 * * *"  # once a day
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: Alpha
+    - uses: imba-tjd/rebase-upstream-action@0.11
+      with:
+        branch: Alpha
+      #   upstream: <user>/<repo>
